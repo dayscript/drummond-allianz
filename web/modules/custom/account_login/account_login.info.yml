@@ -1,0 +1,5 @@
+name: 'Account Login'
+type: module
+description: 'Crea un nuevo formulario de inicio de sesion'
+core: 8.x
+package: 'Dayscript'
