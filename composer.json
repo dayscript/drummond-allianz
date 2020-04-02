@@ -23,8 +23,10 @@
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^2.1",
         "drupal/fbl": "^1.0",
+        "drupal/modal_page": "^2.7",
         "drupal/module_filter": "^3.1",
         "drupal/responsive_menu": "^2.6",
+        "drupal/simple_popup_blocks": "^1.2",
         "drupal/zurb_foundation": "^6.0"
     },
     "require-dev": {

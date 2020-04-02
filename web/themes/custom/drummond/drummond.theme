@@ -36,6 +36,11 @@ function drummond_preprocess_node(&$variables) {
  * Add convenience variables and template suggestions
  */
 function drummond_preprocess_page(&$variables) {
+	//Unable bock-view main-content in the front page
+	// kpr($variables);
+	if($variables['is_front']){
+		unset($variables['page']['content']['drummond_content']);    
+	}
 }
 
 /**

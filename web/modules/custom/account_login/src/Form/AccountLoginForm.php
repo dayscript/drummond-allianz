@@ -7,7 +7,6 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\user\Entity\User;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
-
 /**
  * Implements an account_login form.
  */
@@ -30,7 +29,7 @@ class AccountLoginForm extends FormBase {
       '#options' => [
         'CC' => $this->t('Cédula de ciudadanía'),
         'CE' => $this->t('Cédula de extranjería'),
-        'TI' => $this->t('Tarjeta de identidad.'),
+        'TI' => $this->t('Tarjeta de identidad'),
       ],
     ];
     $form['numero_identificacion'] = [
@@ -46,26 +45,32 @@ class AccountLoginForm extends FormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
+/*    $uid = $form_state->getValue('numero_identificacion');
+    $user = User::load($uid);
+    if ($user->hasRole('administrator') == TRUE) {
+      $form_state->setErrorByName('numero_identificacion', $this->t('Admin'));
+    }
     if (strlen($form_state->getValue('numero_identificacion')) < 3) {
       $form_state->setErrorByName('numero_identificacion', $this->t('The phone number is too short. Please enter a full phone number.'));
-    }
+    }*/
   }
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-$uid=1;
-
-if(isset($uid)) {
-  $user = User::load($uid);
-  user_login_finalize($user);
-  $user_destination = \Drupal::destination()->get();
-  $response = new RedirectResponse($user_destination);
-  $response->send();
-ksm($user);
-}
-    $this->messenger()->addStatus($this->t('Your phone number is @number', ['@number' => $form_state->getValue('numero_identificacion')]));
+    $account = user_load_by_name($form_state->getValue('numero_identificacion'));
+    if ($account == TRUE) {
+      $uid = $account->id();
+      if(isset($uid)) {
+        $user = User::load($uid);
+        user_login_finalize($user);
+        $user_destination = \Drupal::destination()->get();
+        $response = new RedirectResponse($user_destination);
+        $response->send();
+      }
+    }else{
+      $this->messenger()->addError($this->t('El Número de identificación @numero_identificacion, no se encuentra registrado.', ['@numero_identificacion' => $form_state->getValue('numero_identificacion')]));
+    }
   }
-
 }

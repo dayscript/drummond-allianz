@@ -1,0 +1,5 @@
+name: Wizard Medicamentos
+type: module
+description: Wizard Medicamentos Step Form
+core: 8.x
+package: 'Dayscript'

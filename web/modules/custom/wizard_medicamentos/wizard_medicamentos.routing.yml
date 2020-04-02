@@ -1,0 +1,8 @@
+wizard_medicamentos.multi_step_form:
+  path: '/medicamentos'
+  defaults:
+    _form: '\Drupal\wizard_medicamentos\Form\MultiStepForm'
+    _title: 'Multi Step Form'
+  requirements:
+    _permission: 'access administration pages'
+
