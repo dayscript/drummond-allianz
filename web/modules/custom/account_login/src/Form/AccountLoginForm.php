@@ -28,9 +28,9 @@ class AccountLoginForm extends FormBase {
       '#type' => 'select',
       '#title' => $this->t('Tipo de Documento'),
       '#options' => [
-        '1' => $this->t('One'),
-        '2' => $this->t('Two'),
-        '3' => $this->t('Three'),
+        'CC' => $this->t('Cédula de ciudadanía'),
+        'CE' => $this->t('Cédula de extranjería'),
+        'TI' => $this->t('Tarjeta de identidad.'),
       ],
     ];
     $form['numero_identificacion'] = [
