@@ -36,6 +36,10 @@ class AccountLoginForm extends FormBase {
       '#type' => 'number',
       '#title' => $this->t('Número de identificación'),
     ];
+    $form['markup'] = [
+      '#type' => 'markup',
+      '#markup' => '<p>*Deberá diligenciar la información del asegurado que requiera la autorización.</p>',
+    ];
     $form['actions'] = ['#type' => 'actions'];
     $form['actions']['submit'] = ['#type' => 'submit', '#value' => $this->t('Log in')];
     return $form;
@@ -70,7 +74,7 @@ class AccountLoginForm extends FormBase {
         $response->send();
       }
     }else{
-      $this->messenger()->addError($this->t('El Número de identificación @numero_identificacion, no se encuentra registrado.', ['@numero_identificacion' => $form_state->getValue('numero_identificacion')]));
+      $this->messenger()->addError($this->t('Si no puede ingresar, comuníquese a la línea Allianz Drummond 018000411115, ó acérquese a los puntos autorizadores en la ciudad de Barranquilla, Santa Marta o Valledupar.', ['@numero_identificacion' => $form_state->getValue('numero_identificacion')]));
     }
   }
 }

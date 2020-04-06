@@ -35,13 +35,13 @@ class MultiStepForm extends ConfigFormBase
     $config = $this->config('wizard_medicamentos.multi_step_form_config');
 
     if($this->step == 1) {
-      $form['step_1'] = array(
+      $form['step_1'] = [
         '#type' => 'fieldset',
         //'#title' => $this->t('Author'),
         //'#open' => TRUE,
         '#prefix' => '<div class="step-1">',
         '#suffix' => '</div>',
-      );
+      ];
       $form['step_1']['markup'] = [
         '#type' => 'markup',
         '#markup' => '<h2>Medicamentos</h2>',
@@ -50,29 +50,26 @@ class MultiStepForm extends ConfigFormBase
       ];
       $form['step_1']['markup_1'] = [
         '#type' => 'markup',
-        '#markup' => '<p>Your HTML Just Before</p>',
+        '#markup' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada at sapien placerat vulputate. </p>',
         '#prefix' => '<div class="markup"><span>icono</span>',
         '#suffix' => '</div>',
       ];
       $form['step_1']['markup_2'] = [
         '#type' => 'markup',
-        '#markup' => '<p>Your HTML Just Before</p>',
+        '#markup' => '<p>Duis quis sodales nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet tortor lorem. Nam risus ex, venenatis id consequat eget, commodo pellentesque ligula. </p>',
         '#prefix' => '<div class="markup"><span>icono</span>',
         '#suffix' => '</div>',
       ];
       $form['step_1']['markup_3'] = [
         '#type' => 'markup',
-        '#markup' => '<p>Your HTML Just Before</p>',
+        '#markup' => '<p>Curabitur lectus urna, tempor quis urna ut, sollicitudin aliquam dolor. Curabitur sit amet gravida urna. Suspendisse potenti. Aenean malesuada velit a sapien porttitor hendrerit. Quisque interdum est erat. Maecenas egestas odio et leo rhoncus, sit amet scelerisque justo convallis. </p>',
         '#prefix' => '<div class="markup"><span>icono</span>',
         '#suffix' => '</div>',
       ];
-/*      $form['model'] = [
-        '#type' => 'select',
-        '#title' => $this->t('Model'),
-        '#description' => $this->t(''),
-              '#options' => array('1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015'),
-              '#default_value' => $config->get('model'),
-      ];*/
+      $form['politicas'] = array(
+        '#type' => 'checkbox',
+        '#title' => $this->t('Declaro que he leido las políticas de medicamentos'),
+      );
     }
 
     if($this->step == 2) {
