@@ -1,0 +1,10 @@
+form{
+	.form-actions{
+			text-align: center;
+		.button.success{
+			background-color: #379cdb !important;
+			color: $white;
+			margin-top: 1rem;
+		}
+	}
+}

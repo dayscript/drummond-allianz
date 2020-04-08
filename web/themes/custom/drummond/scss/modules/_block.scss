@@ -1,0 +1,70 @@
+.meta-header{
+	background-color: #f2f2f2;
+	overflow: hidden;
+	padding: 0.4rem;
+	#block-responsivemenumobileicon{
+		.responsive-menu-toggle-icon{
+			&:before{
+				background: #a4a4a4;
+			}
+			span.icon{
+				background: #a4a4a4;
+			}
+			&:after{
+				background: #a4a4a4;
+			}
+		}
+	}
+}
+
+header{
+	#block-logo{
+		padding-bottom: 2rem;
+		margin: 2rem 0 2rem;
+	}
+}
+
+#account-login-form{
+	label{
+		text-transform: uppercase;
+		font-size: .7rem;
+	}
+	span{
+		display: block;
+		font-size: .875rem;
+		line-height: 1.8;
+		color: #4F4F4F;
+		margin-bottom: 4rem;
+	}
+}
+
+#block-servicios{
+	padding-top: 1rem;
+	h2{
+		font-size: 1.5rem;
+	}
+	ul.menu{
+		li{
+			width: 100%;
+			border-radius: 16px;
+			border: 1px solid #cacaca;
+			margin: 1rem 0 0;
+			a{
+				color: #040404;
+			}
+		}
+	}
+}
+.step{
+	margin: 2rem 1rem;
+	background-color: #e8e6e6;
+    padding: 1rem;
+}
+
+#webform-submission-medicamentos-add-form{
+	.medicamentos{
+		margin: 2rem 1rem;
+		background-color: #e8e6e6;
+	    padding: 1rem;
+	}
+}

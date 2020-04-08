@@ -38,10 +38,10 @@ class AccountLoginForm extends FormBase {
     ];
     $form['markup'] = [
       '#type' => 'markup',
-      '#markup' => '<p>*Deberá diligenciar la información del asegurado que requiera la autorización.</p>',
+      '#markup' => '<span>*Deberá diligenciar la información del asegurado que requiera la autorización.</span>',
     ];
     $form['actions'] = ['#type' => 'actions'];
-    $form['actions']['submit'] = ['#type' => 'submit', '#value' => $this->t('Log in')];
+    $form['actions']['submit'] = ['#type' => 'submit', '#value' => $this->t('Ingresar')];
     return $form;
   }
 

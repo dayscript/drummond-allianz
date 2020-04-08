@@ -159,8 +159,9 @@
 @import 'layout/footer';
 
 // Modules
-// @import 'modules/block';
-// @import 'modules/button';
+@import 'modules/block';
+@import 'modules/menu_block';
+@import 'modules/button';
 
 // States
 // @import 'states/collapse';
