@@ -41,6 +41,10 @@ class AccountLoginForm extends FormBase {
       '#type' => 'markup',
       '#markup' => '<span>*Deberá diligenciar la información del asegurado que requiera la autorización.</span>',
     ];
+    $form['captcha'] = array(
+      '#type' => 'captcha',
+      '#captcha_type' => 'recaptcha/reCAPTCHA',
+    );
     $form['actions'] = ['#type' => 'actions'];
     $form['actions']['submit'] = ['#type' => 'submit', '#value' => $this->t('Ingresar')];
     return $form;
@@ -69,10 +73,14 @@ class AccountLoginForm extends FormBase {
       $uid = $account->id();
       if(isset($uid)) {
         $user = User::load($uid);
-        user_login_finalize($user);
-        $user_destination = \Drupal::destination()->get();
-        $response = new RedirectResponse($user_destination);
-        $response->send();
+        if ($user->field_tipo_de_documento->value === $form_state->getValue('tipo_documento')) {
+          user_login_finalize($user);
+          $user_destination = \Drupal::destination()->get();
+          $response = new RedirectResponse($user_destination);
+          $response->send();
+        }else{
+          $this->messenger()->addError($this->t('Si no puede ingresar, comuníquese a la línea Allianz Drummond 018000411115, ó acérquese a los puntos autorizadores en la ciudad de Barranquilla, Santa Marta o Valledupar.', ['@numero_identificacion' => $form_state->getValue('numero_identificacion')]));
+        }
       }
     }else{
       $this->messenger()->addError($this->t('Si no puede ingresar, comuníquese a la línea Allianz Drummond 018000411115, ó acérquese a los puntos autorizadores en la ciudad de Barranquilla, Santa Marta o Valledupar.', ['@numero_identificacion' => $form_state->getValue('numero_identificacion')]));
