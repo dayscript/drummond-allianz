@@ -71,3 +71,13 @@ header{
 	background-color: #e8e6e6;
 	padding: 1rem;
 }
+
+.tratamiento-de-datos{
+	text-align: center;
+	> label{
+		margin: 0;
+	}
+	.description{
+		display: inline-block;
+	}
+}
