@@ -32,6 +32,7 @@
         "drupal/recaptcha": "^2.5",
         "drupal/responsive_menu": "^2.6",
         "drupal/simple_popup_blocks": "^1.2",
+        "drupal/smtp": "^1.0@beta",
         "drupal/webform": "^5.9",
         "drupal/zurb_foundation": "^6.0"
     },
