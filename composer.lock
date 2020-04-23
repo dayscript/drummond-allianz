@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65a48da55c3819ab61b85bbe75d92be7",
+    "content-hash": "eaceeb328ccdc30047f2fe7cc9f8e860",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2028,6 +2028,93 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "https://git.drupalcode.org/project/pathauto"
+            }
+        },
+        {
+            "name": "drupal/popup_message",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/popup_message.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/popup_message-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "da0d4b8af206a962f1162c56dca1f92dceb722f3"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1583390888",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Liegmann",
+                    "homepage": "https://www.drupal.org/user/2750277"
+                },
+                {
+                    "name": "Maciej Lukianski",
+                    "homepage": "https://www.drupal.org/user/400060"
+                },
+                {
+                    "name": "Pawelgorski87",
+                    "homepage": "https://www.drupal.org/user/3139083"
+                },
+                {
+                    "name": "goswierk",
+                    "homepage": "https://www.drupal.org/user/3598034"
+                },
+                {
+                    "name": "gpietrzak",
+                    "homepage": "https://www.drupal.org/user/427946"
+                },
+                {
+                    "name": "grzegorz.bartman",
+                    "homepage": "https://www.drupal.org/user/363120"
+                },
+                {
+                    "name": "jaro.2801",
+                    "homepage": "https://www.drupal.org/user/1572856"
+                },
+                {
+                    "name": "sayco",
+                    "homepage": "https://www.drupal.org/user/3517832"
+                },
+                {
+                    "name": "sygnetica",
+                    "homepage": "https://www.drupal.org/user/1726244"
+                },
+                {
+                    "name": "vindi",
+                    "homepage": "https://www.drupal.org/user/2668815"
+                },
+                {
+                    "name": "volodymyr.umanets",
+                    "homepage": "https://www.drupal.org/user/3565617"
+                }
+            ],
+            "description": "Popup message for users",
+            "homepage": "https://www.drupal.org/project/popup_message",
+            "support": {
+                "source": "https://git.drupalcode.org/project/popup_message"
             }
         },
         {
@@ -5205,6 +5292,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/feeds": 15,
+        "drupal/popup_message": 5,
         "drupal/smtp": 10
     },
     "prefer-stable": true,
