@@ -14,12 +14,9 @@
       $('.close-popup-custom', context).once('drummond').on('click',function(e){
         console.log('entre a ocultar');
         $('#popup-alert-proveedor').addClass("hidden");
+        $('#edit-prestatario').focus()
       });
-      // $('#edit-prestatario', context).once('drummond').on('click',function(e){
-      //   console.log('entre a mostrar ');
-      //   $('#popup-alert-proveedor').removeClass("hidden");
-      // });
-      $("#edit-prestatario", context).once('drummond').focus(function(){
+      $('#edit-prestatario', context).once('drummond').on('click',function(e){
         console.log('entre a mostrar ');
         $('#popup-alert-proveedor').removeClass("hidden");
       });

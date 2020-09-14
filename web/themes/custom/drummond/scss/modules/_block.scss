@@ -89,5 +89,9 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    background-color: #e8e6e6;
+	background-color: #e8e6e6;
+	padding: 12px;
+    border: 2px solid #e8e6e6;
+    background: #e8e6e6;
+    overflow: auto;
 }
