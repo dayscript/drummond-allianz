@@ -95,3 +95,14 @@ header{
     background: #e8e6e6;
     overflow: auto;
 }
+.close-popup-custom{
+	font-size: 18px;
+    line-height: 14px;
+    right: 6px;
+    top: 4px;
+    position: absolute;
+    color: #6fa5fd;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+}
