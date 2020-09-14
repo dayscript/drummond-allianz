@@ -8,11 +8,11 @@
   /**
    * Use this behavior as a template for custom Javascript.
    */
-  Drupal.behaviors.drummond = {
+   Drupal.behaviors.drummond = {
     attach: function (context, settings) {
       //alert("I'm alive!");
       $('#edit-prestatario', context).once('drummond').on('click',function(e){
-        $(this).toggleClass("hidden");
+        $('#block-alertaproveedor').toggleClass("hidden");
       });
     }
   };
