@@ -41,10 +41,10 @@ class AccountLoginForm extends FormBase {
       '#type' => 'markup',
       '#markup' => '<span>*Deberá diligenciar la información del asegurado que requiera la autorización.</span>',
     ];
-    $form['captcha'] = array(
-      '#type' => 'captcha',
-      '#captcha_type' => 'recaptcha/reCAPTCHA',
-    );
+    // $form['captcha'] = array(
+    //   '#type' => 'captcha',
+    //   '#captcha_type' => 'recaptcha/reCAPTCHA',
+    // );
     $form['actions'] = ['#type' => 'actions'];
     $form['actions']['submit'] = ['#type' => 'submit', '#value' => $this->t('Ingresar')];
     return $form;

@@ -35,7 +35,6 @@
         "drupal/responsive_menu": "^2.6",
         "drupal/simple_popup_blocks": "^1.2",
         "drupal/smtp": "^1.0@beta",
-        "drupal/views_bulk_operations": "^3.6",
         "drupal/webform": "^5.9",
         "drupal/zurb_foundation": "^6.0"
     },
