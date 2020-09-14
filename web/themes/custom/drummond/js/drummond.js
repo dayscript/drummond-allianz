@@ -15,7 +15,11 @@
         console.log('entre a ocultar');
         $('#popup-alert-proveedor').addClass("hidden");
       });
-      $('#edit-prestatario', context).once('drummond').on('click',function(e){
+      // $('#edit-prestatario', context).once('drummond').on('click',function(e){
+      //   console.log('entre a mostrar ');
+      //   $('#popup-alert-proveedor').removeClass("hidden");
+      // });
+      $("#edit-prestatario", context).once('drummond').focus(function(){
         console.log('entre a mostrar ');
         $('#popup-alert-proveedor').removeClass("hidden");
       });
