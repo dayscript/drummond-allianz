@@ -13,6 +13,7 @@
       //alert("I'm alive!");
       $('#edit-prestatario, .close-popup-custom', context).once('drummond').on('click',function(e){
         $('#block-alertaproveedor').toggleClass("hidden");
+        $('#popup-alert-proveedor').toggleClass("hidden");
       });
 
     }
