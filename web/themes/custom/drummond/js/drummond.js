@@ -11,10 +11,13 @@
    Drupal.behaviors.drummond = {
     attach: function (context, settings) {
       //alert("I'm alive!");
-      $('#edit-prestatario, .close-popup-custom', context).once('drummond').on('click',function(e){
-        console.log('entre a mostrar u ocultar');
-        $('#block-alertaproveedor').toggleClass("hidden");
-        $('#popup-alert-proveedor').toggleClass("hidden");
+      $('.close-popup-custom', context).once('drummond').on('click',function(e){
+        console.log('entre a ocultar');
+        $('#popup-alert-proveedor').addClass("hidden");
+      });
+      $('#edit-prestatario', context).once('drummond').on('click',function(e){
+        console.log('entre a mostrar ');
+        $('#popup-alert-proveedor').removeClass("hidden");
       });
 
     }
