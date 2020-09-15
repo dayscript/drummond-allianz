@@ -36,6 +36,7 @@
         console.log('entre a ocultar');
         $('#block-alertadiagnosticosytev').addClass("hidden");
         $('.alertaDxTev').addClass("hidden");
+        $("#edit-historia-clinica-upload").prop('required',true);
       });
       $('.noDiagnosticoTev', context).once('drummond').on('click',function(e){
         console.log('entre a ocultar');
