@@ -36,12 +36,12 @@
         console.log('entre a ocultar');
         $('#block-alertadiagnosticosytev').addClass("hidden");
         $('.alertaDxTev').addClass("hidden");
-        $("#edit-historia-clinica-upload").attr('required', 'required');
       });
       $('.noDiagnosticoTev', context).once('drummond').on('click',function(e){
         console.log('entre a ocultar');
         $('#block-alertadiagnosticosytev').addClass("hidden");
         $('.alertaDxTev').addClass("hidden");
+        $("#edit-historia-clinica-upload").attr('required', 'required');
       });
 
     }
