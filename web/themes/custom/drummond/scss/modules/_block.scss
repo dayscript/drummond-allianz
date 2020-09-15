@@ -91,6 +91,16 @@ header{
     z-index: 9999;
 	background-color: #e8e6e6;
 }
+#block-alertadiagnosticosytev {
+    position: absolute;
+    max-width: 428px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+	background-color: #e8e6e6;
+}
 .close-popup-custom{
 	font-size: 18px;
     line-height: 14px;
