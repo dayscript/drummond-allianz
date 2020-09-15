@@ -25,7 +25,7 @@
       $('#edit-orden-medica-upload', context).once('drummond').on('click',function(e){
         console.log('entre a mostrar ');
         $('#block-alertadiagnosticosytev').removeClass("hidden");
-        // $('#block-alertaproveedor').addClass("hidden");
+        $('.alertaDxTev').removeClass("hidden");
       });
 
     }
