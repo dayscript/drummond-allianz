@@ -32,6 +32,16 @@
         $('#block-alertadiagnosticosytev').removeClass("hidden");
         $('.alertaDxTev').removeClass("hidden");
       });
+      $('.siDiagnosticoTev', context).once('drummond').on('click',function(e){
+        console.log('entre a ocultar');
+        $('#block-alertadiagnosticosytev').addClass("hidden");
+        $('.alertaDxTev').addClass("hidden");
+      });
+      $('.noDiagnosticoTev', context).once('drummond').on('click',function(e){
+        console.log('entre a ocultar');
+        $('#block-alertadiagnosticosytev').addClass("hidden");
+        $('.alertaDxTev').addClass("hidden");
+      });
 
     }
   };
