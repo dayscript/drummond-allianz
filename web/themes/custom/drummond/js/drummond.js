@@ -42,6 +42,11 @@
         $('#block-alertadiagnosticosytev').addClass("hidden");
         $('.alertaDxTev').addClass("hidden");
         $("#edit-historia-clinica-upload").attr('required', 'required');
+        $("#edit-actions-submit").attr("disabled", true);
+      });
+      $('#edit-historia-clinica-upload', context).once('drummond').change(function(){
+        console.log('entre a habilitar');
+        $("#edit-actions-submit").attr("disabled", false);
       });
 
     }
