@@ -43,6 +43,8 @@
         $('.alertaDxTev').addClass("hidden");
         $("#edit-historia-clinica-upload").attr('required', 'required');
         $("#edit-actions-submit").attr("disabled", true);
+        $("#edit-markup-01").css('display', 'block');
+        $("#edit-markup-01").css('color', 'red');
       });
       $('#edit-historia-clinica-upload', context).once('drummond').change(function(){
         console.log('entre a habilitar');
