@@ -22,7 +22,12 @@
         $('#popup-alert-proveedor').removeClass("hidden");
         $('#block-alertaproveedor').addClass("hidden");
       });
-      $('#edit-orden-medica-upload', context).once('drummond').on('click',function(e){
+      // $('#edit-orden-medica-upload', context).once('drummond').on('click',function(e){
+      //   console.log('entre a mostrar ');
+      //   $('#block-alertadiagnosticosytev').removeClass("hidden");
+      //   $('.alertaDxTev').removeClass("hidden");
+      // });
+      $('#edit-orden-medica-upload', context).once('drummond').change(function(){
         console.log('entre a mostrar ');
         $('#block-alertadiagnosticosytev').removeClass("hidden");
         $('.alertaDxTev').removeClass("hidden");
