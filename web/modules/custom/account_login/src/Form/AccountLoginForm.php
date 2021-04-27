@@ -31,6 +31,8 @@ class AccountLoginForm extends FormBase {
         'CE' => $this->t('Cédula de extranjería'),
         'TI' => $this->t('Tarjeta de identidad'),
         'RC' => $this->t('Registro civil'),
+        'PEP' => $this->t('Permiso Especial de Permanencia'),
+
       ],
     ];
     $form['numero_identificacion'] = [
