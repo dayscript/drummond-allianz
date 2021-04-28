@@ -5,6 +5,7 @@ namespace Drupal\account_login\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\user\Entity\User;
+use Drupal\Core\Url;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
@@ -77,9 +78,14 @@ class AccountLoginForm extends FormBase {
         $user = User::load($uid);
         if ($user->field_tipo_de_documento->value === $form_state->getValue('tipo_documento')) {
           user_login_finalize($user);
-          $user_destination = \Drupal::destination()->get();
-          $response = new RedirectResponse($user_destination);
-          $response->send();
+          // $user_destination = \Drupal::destination()->get();
+          // $response = new RedirectResponse($user_destination);
+          // $url = Url::fromUri('internal:/node/43');
+          // $response = new RedirectResponse($url->toString(),301);
+          // $response->send();
+          $url = Url::fromRoute('entity.node.canonical', ['node' => 43]);
+          $form_state->setRedirectUrl($url);
+          return;
         }else{
           $this->messenger()->addError($this->t('Si no puede ingresar, comuníquese a la línea Allianz Drummond 018000411115, ó acérquese a los puntos autorizadores en la ciudad de Barranquilla, Santa Marta o Valledupar.', ['@numero_identificacion' => $form_state->getValue('numero_identificacion')]));
         }
