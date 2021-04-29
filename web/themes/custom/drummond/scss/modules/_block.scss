@@ -133,3 +133,12 @@ header{
 .card:hover {
 	background-color: #aaaaaa14;
 }
+.agendamiento-citas{
+	position: fixed;
+    width: 152px;
+    height: 60px;
+    bottom: 40px;
+    right: 4px;
+    color: #FFF;
+    z-index: 100;
+}
