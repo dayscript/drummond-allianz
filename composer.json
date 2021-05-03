@@ -19,6 +19,7 @@
         "drupal/adminimal_admin_toolbar": "^1.10",
         "drupal/adminimal_theme": "^1.5",
         "drupal/block_class": "^1.1",
+        "drupal/chosen": "^3.0",
         "drupal/ckeditor_media_embed": "^1.10",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
