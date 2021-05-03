@@ -24,6 +24,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/cshs": "^2.3",
         "drupal/devel": "^2.1",
         "drupal/fbl": "^1.0",
         "drupal/feeds": "^3.0@alpha",
@@ -38,6 +39,7 @@
         "drupal/responsive_menu": "^2.6",
         "drupal/simple_popup_blocks": "^1.2",
         "drupal/smtp": "^1.0@beta",
+        "drupal/taxonomy_manager": "^2.0",
         "drupal/webform": "^5.9",
         "drupal/zurb_foundation": "^6.0"
     },
