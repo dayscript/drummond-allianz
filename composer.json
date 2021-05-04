@@ -24,6 +24,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/cshs": "^2.3",
         "drupal/devel": "^2.1",
         "drupal/fbl": "^1.0",
         "drupal/feeds": "^3.0@alpha",
