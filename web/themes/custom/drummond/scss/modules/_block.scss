@@ -1,86 +1,88 @@
-.meta-header{
-	background-color: #f2f2f2;
-	overflow: hidden;
-	padding: 0.4rem;
-	#block-responsivemenumobileicon{
-		.responsive-menu-toggle-icon{
-			&:before{
-				background: #a4a4a4;
-			}
-			span.icon{
-				background: #a4a4a4;
-			}
-			&:after{
-				background: #a4a4a4;
-			}
-		}
-	}
+.meta-header {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    padding: 0.4rem;
+    #block-responsivemenumobileicon {
+        .responsive-menu-toggle-icon {
+            &:before {
+                background: #a4a4a4;
+            }
+            span.icon {
+                background: #a4a4a4;
+            }
+            &:after {
+                background: #a4a4a4;
+            }
+        }
+    }
 }
 
-header{
-	#block-logo{
-		padding-bottom: 2rem;
-		margin: 2rem 0 2rem;
-	}
+header {
+    #block-logo {
+        padding-bottom: 2rem;
+        margin: 2rem 0 2rem;
+    }
 }
 
-#account-login-form{
-	label{
-		text-transform: uppercase;
-		font-size: .7rem;
-	}
-	span{
-		display: block;
-		font-size: .875rem;
-		line-height: 1.8;
-		color: #4F4F4F;
-		margin-bottom: 4rem;
-	}
-	.g-recaptcha{
-		> div {
-			margin: 0 auto;
-		}
-	}
+#account-login-form {
+    label {
+        text-transform: uppercase;
+        font-size: .7rem;
+    }
+    span {
+        display: block;
+        font-size: .875rem;
+        line-height: 1.8;
+        color: #4F4F4F;
+        margin-bottom: 4rem;
+    }
+    .g-recaptcha {
+        >div {
+            margin: 0 auto;
+        }
+    }
 }
 
-#block-servicios{
-	padding-top: 1rem;
-	h2{
-		font-size: 1.5rem;
-	}
-	ul.menu{
-		li{
-			width: 100%;
-			border-radius: 16px;
-			border: 1px solid #cacaca;
-			margin: 1rem 0 0;
-			a{
-				color: #040404;
-			}
-		}
-	}
+#block-servicios {
+    padding-top: 1rem;
+    h2 {
+        font-size: 1.5rem;
+    }
+    ul.menu {
+        li {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid #cacaca;
+            margin: 1rem 0 0;
+            a {
+                color: #040404;
+            }
+        }
+    }
 }
-.step{
-	margin: 2rem 1rem;
-	background-color: #e8e6e6;
+
+.step {
+    margin: 2rem 1rem;
+    background-color: #e8e6e6;
     padding: 1rem;
 }
 
-.solicitar-autorizacion-form{
-	margin: 2rem 1rem;
-	background-color: #e8e6e6;
-	padding: 1rem;
+.solicitar-autorizacion-form {
+    margin: 2rem 1rem;
+    background-color: #e8e6e6;
+    padding: 1rem;
 }
 
-.tratamiento-de-datos{
-	text-align: center;
-	> label{
-		margin: 0;
-	}
-	.description{
-		display: inline-block;
-	}
+.tratamiento-de-datos {
+    text-align: center;
+    >label {
+        margin: 0;
+    }
+    .description {
+        display: inline-block;
+    }
 }
+
 #block-alertaproveedor {
     position: absolute;
     max-width: 428px;
@@ -89,8 +91,9 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-	background-color: #e8e6e6;
+    background-color: #e8e6e6;
 }
+
 #block-alertadiagnosticosytev {
     position: absolute;
     max-width: 312px;
@@ -103,8 +106,9 @@ header{
     border: #cacaca;
     // border-style: solid;
 }
-.close-popup-custom{
-	font-size: 18px;
+
+.close-popup-custom {
+    font-size: 18px;
     line-height: 14px;
     right: 6px;
     top: 4px;
@@ -114,31 +118,54 @@ header{
     display: block;
     cursor: pointer;
 }
-.popup-custom{
-	padding: 12px;
+
+.popup-custom {
+    padding: 12px;
     border: 2px solid #e8e6e6;
     background: #e8e6e6;
     overflow: auto;
-	
 }
 
-.padding-card{
-	padding: 50px 20px 20px 20px;
+.padding-card {
+    padding: 50px 20px 20px 20px;
 }
 
-.title-card{
-	color: black;
-	font-weight: bold;
+.title-card {
+    color: black;
+    font-weight: bold;
 }
+
 .card:hover {
-	background-color: #aaaaaa14;
+    background-color: #aaaaaa14;
 }
-.agendamiento-citas{
-	position: fixed;
+
+.agendamiento-citas {
+    position: fixed;
     width: 152px;
     height: 60px;
     bottom: 40px;
     right: 4px;
     color: #FFF;
     z-index: 100;
+}
+
+.card-adjust {
+    height: 295px;
+    width: auto;
+    margin: 1px;
+}
+
+.card-text-header {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.card-text-address {
+    padding: 40px 0px 40px 0px;
+    color: #414141;
+}
+
+.ul-phones ul {
+    list-style: none;
+    color: #006192;
 }
