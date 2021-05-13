@@ -178,3 +178,7 @@ header {
 .form-item-field-ciudad-de-atencion-target-id label {
     font-size: 1.375rem !important;
 }
+
+select:disabled {
+    background-color: #ffffff00;
+}
