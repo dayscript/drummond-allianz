@@ -180,5 +180,6 @@ header {
 }
 
 select:disabled {
-    background-color: #ffffff00;
+    background-color: #ffffff00 !important;
+    cursor: not-allowed;
 }
