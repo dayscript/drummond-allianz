@@ -54,6 +54,7 @@
                 $("#edit-alerta-hc").css('display', 'none');
             });
             let url = window.location.pathname
+            let searchParams = new URLSearchParams(window.location.search)
             let value_program = searchParams.get('programa')
             if (url === '/form/autorizacion') {
                 $('select[name="programa"]').val(value_program);
