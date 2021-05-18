@@ -53,6 +53,7 @@
                 $('input[type="submit"]').attr("disabled", false);
                 $("#edit-alerta-hc").css('display', 'none');
             });
+            $(".is-active").removeClass('secondary');
             let url = window.location.pathname
             let searchParams = new URLSearchParams(window.location.search)
             let value_program = searchParams.get('programa')
