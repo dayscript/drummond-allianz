@@ -20,6 +20,7 @@
         "drupal/adminimal_theme": "^1.5",
         "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/block_class": "^1.1",
+        "drupal/calendar": "^1.0@alpha",
         "drupal/chosen": "^3.0",
         "drupal/ckeditor_media_embed": "^1.10",
         "drupal/core-composer-scaffold": "^8.8",
