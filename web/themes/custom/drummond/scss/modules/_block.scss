@@ -222,7 +222,7 @@ td {
 }
 
 .maxWith {
-    max-width: 148px;
+    // max-width: 148px;
 }
 
 .padding-text-card {
@@ -289,5 +289,14 @@ form#views-exposed-form-entidades-page-1 select {
 .cards-home {
     .card {
         height: 320px;
+        .button {
+            position: absolute;
+            bottom: 4.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            display: inline-block;
+            width: auto !important;
+        }
     }
 }
