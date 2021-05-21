@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'AllianzNeo';
+    /* Antes de descargar el archivo, le decimos al buscador
+que intente buscar en local la fuente con nombre
+Cabin, Cabin Regular o Cabin-Regular */
+    src: url(AllianzNeo-Regular.ttf) format('ttf');
+}
+
+body {
+    font-family: 'AllianzNeo';
+}
+
 .meta-header {
     background-color: #f2f2f2;
     overflow: hidden;
@@ -219,4 +231,49 @@ td {
 
 .padding-column {
     padding: 20px 50px 20px 50px;
+}
+
+form#views-exposed-form-entidades-page-1 li {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0 2rem;
+    float: none;
+}
+
+form#views-exposed-form-entidades-page-1 li:nth-child(1) a {
+    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    padding-top: 64px;
+    display: inline-block;
+}
+
+form#views-exposed-form-entidades-page-1 li:nth-child(2) a {
+    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    padding-top: 64px;
+    display: inline-block;
+}
+
+form#views-exposed-form-entidades-page-1 li:nth-child(3) a {
+    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    padding-top: 64px;
+    display: inline-block;
+}
+
+form#views-exposed-form-entidades-page-1 li:nth-child(4) a {
+    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    padding-top: 64px;
+    display: inline-block;
+}
+
+form#views-exposed-form-entidades-page-1 ul {
+    margin-bottom: 1rem;
+    list-style-position: outside;
+    line-height: 1.6;
+}
+
+form#views-exposed-form-entidades-page-1 select {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #414141;
+    margin-right: 2rem;
 }
