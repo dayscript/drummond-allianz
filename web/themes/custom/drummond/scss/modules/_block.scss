@@ -230,7 +230,7 @@ td {
 }
 
 .padding-column {
-    padding: 20px 50px 20px 50px;
+    padding: 20px 15px 20px 15px;
 }
 
 form#views-exposed-form-entidades-page-1 li {
@@ -284,4 +284,10 @@ form#views-exposed-form-entidades-page-1 select {
 
 .section-home {
     background: #f9f9f9;
+}
+
+.cards-home {
+    .card {
+        height: 320px;
+    }
 }
