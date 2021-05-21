@@ -242,33 +242,33 @@ form#views-exposed-form-entidades-page-1 li {
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(1) a {
-    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
     padding-top: 64px;
     display: inline-block;
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(2) a {
-    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
     padding-top: 64px;
     display: inline-block;
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(3) a {
-    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
     padding-top: 64px;
     display: inline-block;
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(4) a {
-    background: url(https://drummond-dev.demodayscript.com/sites/default/files/2021-05/plan_0.png) no-repeat center top;
+    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
     padding-top: 64px;
     display: inline-block;
 }
 
 form#views-exposed-form-entidades-page-1 ul {
-    margin-bottom: 1rem;
-    list-style-position: outside;
-    line-height: 1.6;
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 
 form#views-exposed-form-entidades-page-1 select {
