@@ -61,6 +61,8 @@
                 $('select[name="programa"]').val(value_program);
             }
 
+            $('#block-marcadelsitio a').attr('href', '/home')
+
         }
     };
 
