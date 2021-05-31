@@ -11,9 +11,13 @@ body {
 }
 
 .meta-header {
-    background-color: #f2f2f2;
+    background-color: #fff;
     overflow: hidden;
-    padding: 0.4rem;
+    padding: 0.8rem;
+    border-bottom: 1px solid #f2f2f2;
+    a#toggle-icon {
+        margin-top: 0.9rem;
+    }
     #block-responsivemenumobileicon {
         .responsive-menu-toggle-icon {
             &:before {
@@ -55,10 +59,24 @@ header {
     }
 }
 
+.title-card {
+    font-weight: normal !important;
+}
+
+main#main {
+    padding-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+}
+
 #block-servicios {
     padding-top: 1rem;
     h2 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
+        margin: 2rem 0;
     }
     ul.menu {
         li {
@@ -73,16 +91,34 @@ header {
     }
 }
 
-.step {
-    margin: 2rem 1rem;
-    background-color: #e8e6e6;
+.step {}
+
+.card {
     padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card.text-center.card-adjust {
+    margin-bottom: 2rem;
+}
+
+section#block-accountloginblock {
+    padding: 3rem;
+}
+
+section#block-logo {
+    display: none;
+}
+
+section#block-footer {
+    font-size: 0.9rem;
 }
 
 .solicitar-autorizacion-form {
     margin: 2rem 1rem;
-    background-color: #e8e6e6;
-    padding: 1rem;
+    background-color: #f0f0f0;
+    padding: 1.4rem;
+    border-radius: 10px;
 }
 
 .tratamiento-de-datos {
@@ -126,25 +162,57 @@ header {
     top: 4px;
     position: absolute;
     color: #6fa5fd;
-    font-weight: 700;
     display: block;
     cursor: pointer;
 }
 
 .popup-custom {
-    padding: 12px;
-    border: 2px solid #e8e6e6;
+    padding: 18px;
+    border: 0px solid #e8e6e6;
     background: #e8e6e6;
     overflow: auto;
+    border-radius: 10px !important;
+    font-size: 14px;
+}
+
+#popup-message-window {
+    display: block;
+    position: fixed;
+    _position: absolute;
+    overflow: auto;
+    background: #ffffff;
+    border: 0px solid #cecece;
+    z-index: 9999;
+    padding: 18px;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px !important;
 }
 
 .padding-card {
     padding: 50px 20px 20px 20px;
 }
 
-.title-card {
-    color: black;
-    font-weight: bold;
+#popup-message-close {
+    text-indent: -10000px;
+    position: relative;
+    padding: 14px;
+    &:after {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        content: "";
+        background: url(../images/close.png);
+    }
 }
 
 .card:hover {
@@ -242,26 +310,26 @@ form#views-exposed-form-entidades-page-1 li {
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(1) a {
-    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
-    padding-top: 64px;
+    background: url(../images/plan-1.png) no-repeat center top;
+    padding-top: 90px;
     display: inline-block;
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(2) a {
-    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
-    padding-top: 64px;
+    background: url(../images/plan-2.png) no-repeat center top;
+    padding-top: 90px;
     display: inline-block;
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(3) a {
-    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
-    padding-top: 64px;
+    background: url(../images/plan-3.png) no-repeat center top;
+    padding-top: 90px;
     display: inline-block;
 }
 
 form#views-exposed-form-entidades-page-1 li:nth-child(4) a {
-    background: url(/sites/default/files/2021-05/plan_0.png) no-repeat center top;
-    padding-top: 64px;
+    background: url(../images/plan-4.png) no-repeat center top;
+    padding-top: 90px;
     display: inline-block;
 }
 
@@ -300,4 +368,14 @@ form#views-exposed-form-entidades-page-1 select {
             width: auto !important;
         }
     }
+}
+
+.mm-panels {
+    a {
+        font-size: 1rem;
+    }
+}
+
+.mm-menu.mm-theme-dark {
+    background: #002866;
 }
