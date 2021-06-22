@@ -11,7 +11,7 @@
     Drupal.behaviors.drummond = {
         attach: function(context, settings) {
             console.log('voy');
-            $(".pager__item--previous span").text('‹‹ Anterior');
+            $(".pager__item--previous span span").text('‹‹ Anterior');
             //alert("I'm alive!");
             $('.close-popup-custom', context).once('drummond').on('click', function(e) {
                 console.log('entre a ocultar');
