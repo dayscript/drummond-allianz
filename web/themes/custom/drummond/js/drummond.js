@@ -10,7 +10,6 @@
      */
     Drupal.behaviors.drummond = {
         attach: function(context, settings) {
-            let href = $("li.pager__item. pager__item--previous a").attr("href");
             console.log('voy');
             $(".pager__item--previous span").text('‹‹ Anterior');
             //alert("I'm alive!");
