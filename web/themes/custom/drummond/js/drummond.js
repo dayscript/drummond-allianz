@@ -10,6 +10,8 @@
      */
     Drupal.behaviors.drummond = {
         attach: function(context, settings) {
+            let href = $("li.pager__item. pager__item--previous a").attr("href");
+            $(".pager__item--previous").after("<a href='" + href + "'>‹‹ Anterior</a>");
             //alert("I'm alive!");
             $('.close-popup-custom', context).once('drummond').on('click', function(e) {
                 console.log('entre a ocultar');
