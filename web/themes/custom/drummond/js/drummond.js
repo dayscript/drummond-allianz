@@ -10,7 +10,6 @@
      */
     Drupal.behaviors.drummond = {
         attach: function(context, settings) {
-            console.log('voy');
             $(".pager__item--previous span:nth-child(2)").text('Anterior');
             $("#account-login-form .js-form-item-tratamientos-datos label").append("<p>He leído y acepto el <a href='#'>tratamiento de datos personales<a></p>");
             //alert("I'm alive!");
@@ -57,6 +56,8 @@
                 $("#edit-alerta-hc").css('display', 'none');
             });
             $(".is-active").removeClass('secondary');
+
+            /* Asiganción de programa a select de autorización */
             let url = window.location.pathname
             let searchParams = new URLSearchParams(window.location.search)
             let value_program = searchParams.get('programa')
@@ -69,8 +70,36 @@
             } else if (url === '/form/autorizacion-valledupar-2') {
                 $('select[name="programa"]').val(value_program);
             }
+            /* Fin asiganción de programa a select de autorización */
 
+            /* Emails de enfermeras por ciudad */
+            var email_santa_marta = 'yisneira.alvis@allianz.co';
+            var email_barranquilla = 'greys.miranda@allianz.co';
+            var email_valledupar_1 = 'monica.diaz@allianz.co';
+            var email_valledupar_2 = 'ulieta.araujo@allianz.co';
+            /* Fin de emails de enfermeras por ciudad */
+
+            /* Validadcion de ciudad y porgrama para asignación de emails */
+            $("#edit-ciudad").change(function() {
+                var ciudad = $('select[name="ciudad"]').val();
+                if (ciudad == 'Barranquilla') {
+                    $("input[name=email]").val(email_barranquilla);
+                } else if (ciudad == 'Santa marta') {
+                    $("input[name=email]").val(email_santa_marta);
+                } else if (ciudad == 'Valledupar') {
+                    var programa = $('select[name="programa"]').val();
+                    if (programa == 17 || programa == 18) {
+                        $("input[name=email]").val(email_valledupar_1);
+                    } else {
+                        $("input[name=email]").val(email_valledupar_2);
+                    }
+                }
+            });
+            /* Fin de validadcion de ciudad y porgrama para asignación de emails */
+
+            /* Cambio de url en el icono del home */
             $('#block-marcadelsitio a').attr('href', '/home')
+                /* Fin cambio de url en el icono del home */
 
         }
     };
