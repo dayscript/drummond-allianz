@@ -45,8 +45,8 @@ class AccountLoginForm extends FormBase {
       '#markup' => '<span>*Deberá diligenciar la información del asegurado que requiera la autorización.</span>',
     ];
     $form['tratamientos_datos'] = array(
-      '#type' => 'checkboxes',
-      '#title' => t('He leído y acepto el tratamiento de datos personales'),
+      '#type' => 'checkbox',
+      '#title' => t(' '),
       '#return_value' => 1,
       '#default_value' => 0,
    );
