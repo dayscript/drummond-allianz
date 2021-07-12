@@ -12,7 +12,7 @@
         attach: function(context, settings) {
             console.log('voy');
             $(".pager__item--previous span:nth-child(2)").text('Anterior');
-            $("#account-login-form .js-form-item-tratamientos-datos label").append( "<p>He leído y acepto el <a href='#'>tratamiento de datos personales<a></p>" );
+            $("#account-login-form .js-form-item-tratamientos-datos label").append("<p>He leído y acepto el <a href='#'>tratamiento de datos personales<a></p>");
             //alert("I'm alive!");
             $('.close-popup-custom', context).once('drummond').on('click', function(e) {
                 console.log('entre a ocultar');
@@ -61,6 +61,12 @@
             let searchParams = new URLSearchParams(window.location.search)
             let value_program = searchParams.get('programa')
             if (url === '/form/autorizacion') {
+                $('select[name="programa"]').val(value_program);
+            } else if (url === '/form/autorizacion-barranquilla') {
+                $('select[name="programa"]').val(value_program);
+            } else if (url === '/form/autorizacion-valledupar-1') {
+                $('select[name="programa"]').val(value_program);
+            } else if (url === '/form/autorizacion-valledupar-2') {
                 $('select[name="programa"]').val(value_program);
             }
 
