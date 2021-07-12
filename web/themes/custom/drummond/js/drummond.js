@@ -82,18 +82,27 @@
             /* Validadcion de ciudad y porgrama para asignación de emails */
             $("#edit-ciudad").change(function() {
                 var ciudad = $('select[name="ciudad"]').val();
+                var programa = $('select[name="programa"]').val();
                 if (ciudad == 'Barranquilla') {
                     $("input[name=email]").val(email_barranquilla);
                 } else if (ciudad == 'Santa marta') {
                     $("input[name=email]").val(email_santa_marta);
                 } else if (ciudad == 'Valledupar') {
-                    var programa = $('select[name="programa"]').val();
                     if (programa == 17 || programa == 18) {
                         $("input[name=email]").val(email_valledupar_1);
                     } else {
                         $("input[name=email]").val(email_valledupar_2);
                     }
                 }
+                /* Asiganción de Valor al programa */
+                if (programa == 16) {
+                    $("input[name=programas]").val('Riesgo Cardiovascular');
+                } else if (programa == 17) {
+                    $("input[name=programas]").val('Gestante');
+                } else if (programa == 18) {
+                    $("input[name=programas]").val('Crecimiento y desarrollo');
+                }
+                /* Fin asiganción de Valor al programa */
             });
             /* Fin de validadcion de ciudad y porgrama para asignación de emails */
 
