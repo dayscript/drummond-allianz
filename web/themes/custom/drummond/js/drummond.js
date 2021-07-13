@@ -50,6 +50,13 @@
                 $("#edit-alerta-hc").css('display', 'block');
                 $("#edit-alerta-hc").css('color', 'red');
             });
+            let url_entidades = window.location.pathname;
+            if (url_entidades == '/entidades') {
+                console.log('entre1')
+                setTimeout(function() {
+                    $('#block-alertadirectoriomedico').removeClass("hidden");
+                }, 500);
+            }
             $(".close-popup-custom-entidades").click(function() {
                 $('#block-alertadirectoriomedico').addClass("hidden");
             });
