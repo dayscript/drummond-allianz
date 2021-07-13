@@ -17,6 +17,7 @@
                 console.log('entre a ocultar');
                 $('#popup-alert-proveedor').addClass("hidden");
                 $('#block-alertaproveedor').addClass("hidden");
+                $('#block-alertadirectoriomedico').addClass("hidden");
                 $('#edit-prestatario').focus()
             });
             $('#edit-prestatario', context).once('drummond').on('click', function(e) {
@@ -49,6 +50,12 @@
                 $("#edit-alerta-hc").css('display', 'block');
                 $("#edit-alerta-hc").css('color', 'red');
             });
+            $('#entidades-view', context).once('drummond').on('click', function(e) {
+                setTimeout(function() {
+                    $('#block-alertadirectoriomedico').removeClass("hidden");
+                }, 700);
+            });
+
             $('#edit-historia-clinica-upload', context).once('drummond').change(function() {
                 console.log('entre a habilitar');
                 // $("#edit-actions-submit").attr("disabled", false);
