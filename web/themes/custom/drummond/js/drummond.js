@@ -53,6 +53,7 @@
             $('#entidades-view', context).once('drummond').on('click', function(e) {
                 setTimeout(function() {
                     $('#block-alertadirectoriomedico').removeClass("hidden");
+                    $('#popup-alert-entidades').removeClass("hidden");
                 }, 700);
             });
             $('.close-popup-custom-entidades', context).once('drummond').on('click', function(e) {
