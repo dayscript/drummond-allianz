@@ -179,7 +179,27 @@ section#block-footer {
     cursor: pointer;
 }
 
+.close-popup-custom-entidades {
+    font-size: 18px;
+    line-height: 14px;
+    right: 6px;
+    top: 4px;
+    position: absolute;
+    color: #6fa5fd;
+    display: block;
+    cursor: pointer;
+}
+
 .popup-custom {
+    padding: 18px;
+    border: 0px solid #e8e6e6;
+    background: #e8e6e6;
+    overflow: auto;
+    border-radius: 10px !important;
+    font-size: 14px;
+}
+
+.popup-custom-entidades {
     padding: 18px;
     border: 0px solid #e8e6e6;
     background: #e8e6e6;

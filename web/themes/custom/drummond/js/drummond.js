@@ -55,6 +55,9 @@
                     $('#block-alertadirectoriomedico').removeClass("hidden");
                 }, 700);
             });
+            $('.close-popup-custom-entidades', context).once('drummond').on('click', function(e) {
+                $('#block-alertadirectoriomedico').addClass("hidden");
+            });
 
             $('#edit-historia-clinica-upload', context).once('drummond').change(function() {
                 console.log('entre a habilitar');
