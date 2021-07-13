@@ -193,6 +193,14 @@ section#block-footer {
     overflow: auto;
     border-radius: 10px !important;
     font-size: 14px;
+    position: absolute;
+    max-width: 312px;
+    display: block;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #e8e6e6;
 }
 
 #popup-message-window {
