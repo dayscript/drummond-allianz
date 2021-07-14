@@ -88,10 +88,11 @@
             /* Fin asiganción de programa a select de autorización */
 
             /* Emails de enfermeras por ciudad */
-            var email_santa_marta = 'yisneira.alvis@allianz.co';
-            var email_barranquilla = 'greys.miranda@allianz.co';
-            var email_valledupar_1 = 'monica.diaz@allianz.co';
-            var email_valledupar_2 = 'ulieta.araujo@allianz.co';
+            var domin_allianz = 'allianz';
+            var email_santa_marta = 'yisneira.alvis';
+            var email_barranquilla = 'greys.miranda';
+            var email_valledupar_1 = 'monica.diaz';
+            var email_valledupar_2 = 'ulieta.araujo';
             /* Fin de emails de enfermeras por ciudad */
 
             /* Validadcion de ciudad y porgrama para asignación de emails */
@@ -99,14 +100,14 @@
                 var ciudad = $('select[name="ciudad"]').val();
                 var programa = $('select[name="programa"]').val();
                 if (ciudad == 'Barranquilla') {
-                    $("input[name=email]").val(email_barranquilla);
+                    $("input[name=email]").val(email_barranquilla + domin_allianz + '.co');
                 } else if (ciudad == 'Santa marta') {
-                    $("input[name=email]").val(email_santa_marta);
+                    $("input[name=email]").val(email_santa_marta + domin_allianz + '.co');
                 } else if (ciudad == 'Valledupar') {
                     if (programa == 17 || programa == 18) {
-                        $("input[name=email]").val(email_valledupar_1);
+                        $("input[name=email]").val(email_valledupar_1 + domin_allianz + '.co');
                     } else {
-                        $("input[name=email]").val(email_valledupar_2);
+                        $("input[name=email]").val(email_valledupar_2 + domin_allianz + '.co');
                     }
                 }
                 /* Asiganción de Valor al programa */
