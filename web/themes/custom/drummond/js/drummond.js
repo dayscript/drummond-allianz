@@ -100,14 +100,14 @@
                 var ciudad = $('select[name="ciudad"]').val();
                 var programa = $('select[name="programa"]').val();
                 if (ciudad == 'Barranquilla') {
-                    $("input[name=email]").val(email_barranquilla + domin_allianz + '.co');
+                    $("input[name=email]").val(email_barranquilla + '@' + domin_allianz + '.co');
                 } else if (ciudad == 'Santa marta') {
-                    $("input[name=email]").val(email_santa_marta + domin_allianz + '.co');
+                    $("input[name=email]").val(email_santa_marta + '@' + domin_allianz + '.co');
                 } else if (ciudad == 'Valledupar') {
                     if (programa == 17 || programa == 18) {
-                        $("input[name=email]").val(email_valledupar_1 + domin_allianz + '.co');
+                        $("input[name=email]").val(email_valledupar_1 + '@' + domin_allianz + '.co');
                     } else {
-                        $("input[name=email]").val(email_valledupar_2 + domin_allianz + '.co');
+                        $("input[name=email]").val(email_valledupar_2 + '@' + domin_allianz + '.co');
                     }
                 }
                 /* Asiganción de Valor al programa */
