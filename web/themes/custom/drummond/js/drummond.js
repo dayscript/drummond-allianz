@@ -87,7 +87,7 @@
             }
             /* Fin asiganción de programa a select de autorización */
 
-            /* Validadcion de ciudad y porgrama para asignación de emails */
+            /* Validadcion de ciudad y programa para asignación de emails */
             $("#edit-ciudad").change(function() {
                 var ciudad = $('select[name="ciudad"]').val();
                 var programa = $('select[name="programa"]').val();
@@ -116,7 +116,7 @@
                 }
                 /* Fin asiganción de Valor al programa */
             });
-            /* Fin de validadcion de ciudad y porgrama para asignación de emails */
+            /* Fin de validadcion de ciudad y programa para asignación de emails */
 
             /* Cambio de url en el icono del home */
             $('#block-marcadelsitio a').attr('href', '/home')

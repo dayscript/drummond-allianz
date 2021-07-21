@@ -27,6 +27,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/cshs": "^2.3",
+        "drupal/delete_all": "^2.0",
         "drupal/devel": "^2.1",
         "drupal/ds": "^3.12",
         "drupal/examples": "^3.0",
